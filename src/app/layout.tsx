@@ -18,8 +18,14 @@ export const metadata: Metadata = {
     title: 'Solvo Solutions | Fair Redress, Done Right',
     description: 'FCA-regulated claims-management firm specializing in consumer justice and redress.',
   },
-  viewport: 'width=device-width, initial-scale=1',
-  themeColor: '#0ea5e9',
+}
+
+export function generateViewport() {
+  return {
+    width: 'device-width',
+    initialScale: 1,
+    themeColor: '#0ea5e9',
+  }
 }
 
 export default function RootLayout({
