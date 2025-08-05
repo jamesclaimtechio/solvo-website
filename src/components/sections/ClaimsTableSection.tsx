@@ -32,8 +32,12 @@ export default function ClaimsTableSection() {
   }
 
   return (
-    <section className="section-padding bg-gradient-to-b from-slate-50/50 to-white">
-      <div className="container">
+    <section className="section-padding bg-gradient-to-b from-slate-50/50 to-white relative overflow-hidden">
+      {/* Background Lens Effects */}
+      <div className="absolute top-0 -left-32 w-80 h-80 bg-gradient-to-br from-blue-100/50 to-primary-100/50 rounded-full blur-3xl opacity-35" />
+      <div className="absolute bottom-32 -right-16 w-72 h-72 bg-gradient-to-br from-primary-200/40 to-blue-200/40 rounded-full blur-3xl opacity-30" />
+      
+      <div className="container relative">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20">

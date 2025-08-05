@@ -23,8 +23,12 @@ export default function TrackRecordSection() {
   }
 
   return (
-    <section className="section-padding bg-white">
-      <div className="container">
+    <section className="section-padding bg-gradient-to-b from-white to-slate-50/30 relative overflow-hidden">
+      {/* Background Lens Effects */}
+      <div className="absolute top-16 -right-20 w-88 h-88 bg-gradient-to-br from-primary-100/50 to-blue-100/50 rounded-full blur-3xl opacity-40" />
+      <div className="absolute bottom-0 -left-32 w-96 h-96 bg-gradient-to-br from-blue-200/35 to-primary-200/35 rounded-full blur-3xl opacity-25" />
+      
+      <div className="container relative">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">

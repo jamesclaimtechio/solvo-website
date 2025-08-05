@@ -42,8 +42,12 @@ export default function ValuesSection() {
   }
 
   return (
-    <section className="section-padding bg-gray-50">
-      <div className="container">
+    <section className="section-padding bg-gradient-to-b from-gray-50 to-slate-50/30 relative overflow-hidden">
+      {/* Background Lens Effects */}
+      <div className="absolute top-20 left-1/4 w-64 h-64 bg-gradient-to-br from-primary-100/40 to-blue-100/40 rounded-full blur-3xl opacity-25" />
+      <div className="absolute bottom-20 right-1/4 w-80 h-80 bg-gradient-to-br from-blue-200/30 to-primary-200/30 rounded-full blur-3xl opacity-20" />
+      
+      <div className="container relative">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-16">

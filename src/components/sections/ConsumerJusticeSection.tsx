@@ -29,8 +29,12 @@ export default function ConsumerJusticeSection() {
   ]
 
   return (
-    <section className="section-padding bg-gradient-to-b from-white to-slate-50/50">
-      <div className="container">
+    <section className="section-padding bg-gradient-to-b from-white to-slate-50/50 relative overflow-hidden">
+      {/* Background Lens Effects */}
+      <div className="absolute top-32 -right-32 w-96 h-96 bg-gradient-to-br from-primary-100/40 to-blue-100/40 rounded-full blur-3xl opacity-30" />
+      <div className="absolute bottom-0 -left-24 w-64 h-64 bg-gradient-to-br from-blue-200/30 to-primary-200/30 rounded-full blur-3xl opacity-25" />
+      
+      <div className="container relative">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
           <div className="text-center mb-20">
