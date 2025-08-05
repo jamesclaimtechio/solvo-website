@@ -93,9 +93,7 @@ export default function Footer() {
               <h5 className="text-lg font-semibold text-white mb-4">Company Information</h5>
               <div className="space-y-2 text-gray-300">
                 <p><span className="text-gray-400">Company Name:</span> Solvo Solutions Ltd</p>
-                <p><span className="text-gray-400">Company Number:</span> [TO BE VERIFIED]</p>
-                <p><span className="text-gray-400">Incorporated:</span> [DATE FROM COMPANIES HOUSE]</p>
-                <p><span className="text-gray-400">VAT Number:</span> [IF APPLICABLE]</p>
+                <p><span className="text-gray-400">Company Number:</span> 14760023</p>
               </div>
             </div>
             
@@ -103,7 +101,7 @@ export default function Footer() {
             <div>
               <h5 className="text-lg font-semibold text-white mb-4">FCA Authorization</h5>
               <div className="space-y-2 text-gray-300">
-                <p><span className="text-gray-400">FCA Number:</span> [FCA REFERENCE NUMBER]</p>
+                <p><span className="text-gray-400">FCA Number:</span> 1013195</p>
                 <p><span className="text-gray-400">Authorized for:</span> Claims Management</p>
                 <p><span className="text-gray-400">Regulated Activities:</span> Claims Management Services</p>
                 <p>
@@ -124,9 +122,9 @@ export default function Footer() {
               <h5 className="text-lg font-semibold text-white mb-4">Registered Office</h5>
               <div className="text-gray-300">
                 <p className="leading-relaxed">
-                  [REGISTERED OFFICE ADDRESS]<br/>
-                  [FROM COMPANIES HOUSE]<br/>
-                  [POSTCODE]<br/>
+                  Suite 3, 2nd Floor, Didsbury House<br/>
+                  748 - 754 Wilmslow Road<br/>
+                  Manchester, England, M20 2DW<br/>
                   United Kingdom
                 </p>
                 <p className="mt-3">
@@ -153,9 +151,9 @@ export default function Footer() {
             <div className="text-gray-300">
               <h6 className="font-semibold text-white mb-2">Regulatory Information</h6>
               <p className="text-sm leading-relaxed">
-                Solvo Solutions Ltd is authorized and regulated by the Financial Conduct Authority (FCA) for claims management activities. 
-                We connect consumers with specialist legal partners who provide representation and advice. Our service operates on a 
-                success-only fee basis capped at 30% + VAT. Full terms and conditions apply.
+                Solvo Solutions Ltd (Company Number: 14760023) is authorized and regulated by the Financial Conduct Authority (FCA Reference Number: 1013195) 
+                to carry out claims management activities. We connect consumers with specialist legal partners who provide representation and advice. 
+                Our service operates on a success-only fee basis capped at 30% + VAT. Full terms and conditions apply.
               </p>
             </div>
           </div>
@@ -169,7 +167,7 @@ export default function Footer() {
                 © 2025 Solvo Solutions Ltd. All rights reserved.
               </p>
               <p className="text-gray-500 text-sm">
-                Company Number: [TO BE VERIFIED] | FCA Number: [TO BE VERIFIED]
+                Company Number: 14760023 | FCA Number: 1013195
               </p>
             </div>
             <div className="flex items-center gap-8 text-gray-400">
