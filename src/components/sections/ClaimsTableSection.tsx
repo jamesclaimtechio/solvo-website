@@ -32,21 +32,21 @@ export default function ClaimsTableSection() {
   }
 
   return (
-    <section className="section-padding bg-gray-50">
+    <section className="section-padding bg-gradient-to-b from-slate-50/50 to-white">
       <div className="container">
         <div className="max-w-6xl mx-auto">
           {/* Section Header */}
-          <div className="text-center mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6">
+          <div className="text-center mb-20">
+            <h2 className="section-subheader mb-8">
               Claims We Handle
             </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
               From motor finance mis-selling to housing disputes, we cover a comprehensive range of consumer justice issues.
             </p>
           </div>
           
           {/* Claims Cards */}
-          <div className="space-y-4">
+          <div className="space-y-6">
             {claims.map((claim, index) => {
               const IconComponent = getIcon(index)
               const isHighlighted = index === 0 || index === 1 // Highlight main services
@@ -54,38 +54,40 @@ export default function ClaimsTableSection() {
               return (
                 <div 
                   key={index} 
-                  className={`card hover:shadow-md transition-all duration-200 ${
-                    isHighlighted ? 'ring-2 ring-primary-100 bg-primary-50/30' : ''
+                  className={`card-elevated transition-all duration-300 ${
+                    isHighlighted 
+                      ? 'bg-gradient-to-r from-primary-50 via-white to-blue-50 border-primary-200 ring-1 ring-primary-100' 
+                      : 'hover:border-gray-200'
                   }`}
                 >
-                  <div className="flex items-start gap-4">
-                    <div className={`flex-shrink-0 w-12 h-12 rounded-lg flex items-center justify-center ${
-                      isHighlighted ? 'bg-primary-100' : 'bg-gray-100'
+                  <div className="flex items-start gap-6">
+                    <div className={`flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg ${
+                      isHighlighted 
+                        ? 'bg-gradient-to-br from-primary-500 to-primary-600' 
+                        : 'bg-gradient-to-br from-gray-400 to-gray-500'
                     }`}>
-                      <IconComponent className={`w-6 h-6 ${
-                        isHighlighted ? 'text-primary-600' : 'text-gray-600'
-                      }`} />
+                      <IconComponent className="w-8 h-8 text-white" />
                     </div>
                     
                     <div className="flex-1 min-w-0">
-                      <div className="mb-2">
-                        <h3 className="text-lg font-semibold text-gray-900 mb-1">
+                      <div className="mb-4">
+                        <h3 className="text-xl font-bold gradient-text mb-2">
                           {claim.title}
                         </h3>
                         {claim.subtitle && (
-                          <p className="text-sm text-gray-600 font-medium">
+                          <p className="text-sm text-gray-600 font-medium leading-relaxed">
                             {claim.subtitle}
                           </p>
                         )}
                       </div>
-                      <p className="text-gray-700 leading-relaxed">
+                      <p className="text-gray-700 leading-relaxed text-lg">
                         {claim.description}
                       </p>
                     </div>
                     
                     {isHighlighted && (
                       <div className="flex-shrink-0">
-                        <span className="badge badge-primary text-xs">
+                        <span className="badge badge-primary">
                           Active
                         </span>
                       </div>
@@ -93,7 +95,7 @@ export default function ClaimsTableSection() {
                     
                     {index === 4 && (
                       <div className="flex-shrink-0">
-                        <span className="badge badge-gray text-xs">
+                        <span className="badge badge-gray">
                           Coming Soon
                         </span>
                       </div>
@@ -105,12 +107,10 @@ export default function ClaimsTableSection() {
           </div>
           
           {/* Information Notice */}
-          <div className="text-center mt-12">
-            <div className="inline-flex items-center gap-4 bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <div className="text-center">
-                <p className="text-gray-900 font-medium mb-1">Consumer Rights Information</p>
-                <p className="text-gray-600 text-sm">Understanding your options in claims management</p>
-              </div>
+          <div className="text-center mt-16">
+            <div className="card-elevated bg-gradient-to-r from-blue-50 via-white to-primary-50 text-center max-w-2xl mx-auto">
+              <h3 className="text-xl font-bold gradient-text mb-3">Consumer Rights Information</h3>
+              <p className="text-gray-600 leading-relaxed">Understanding your options in claims management processes and consumer protection</p>
             </div>
           </div>
         </div>
