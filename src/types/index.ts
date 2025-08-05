@@ -3,7 +3,6 @@ export interface ClaimType {
   subtitle?: string
   description: string
   badge?: string
-  timeline?: string
 }
 
 export interface ValueItem {

@@ -1,4 +1,4 @@
-import { Car, Home, CreditCard, AlertTriangle, TrendingUp, Clock, Award } from 'lucide-react'
+import { Car, Home, CreditCard, AlertTriangle, TrendingUp, Award } from 'lucide-react'
 import type { ClaimType } from '@/types'
 
 export default function ClaimsTableSection() {
@@ -7,36 +7,31 @@ export default function ClaimsTableSection() {
       title: 'Motor Finance Mis‑selling',
       subtitle: 'Discretionary Commission Arrangements (DCA) • Hidden lending charges • Irresponsible lending',
       description: 'When car dealerships receive secret commissions from lenders without disclosure, or when finance agreements contain unfair terms, hidden fees, or were sold irresponsibly without proper affordability checks.',
-      badge: 'High Volume',
-      timeline: '6-12 months'
+      badge: 'High Volume'
     },
     {
       title: 'Housing Disrepair',
       subtitle: 'Property defects • Landlord negligence • Health & safety violations',
       description: 'When landlords fail to maintain rental properties in habitable condition, including persistent damp, mold, heating failures, electrical issues, structural problems, or other defects that affect health, safety, or quality of life.',
-      badge: 'Active Cases',
-      timeline: '3-8 months'
+      badge: 'Active Cases'
     },
     {
       title: 'Tenancy Deposit Protection',
       subtitle: 'Unprotected deposits • Late protection • Unlawful deductions',
       description: 'When landlords fail to protect tenancy deposits in government-approved schemes within required timeframes, or when they make unreasonable deductions for normal wear and tear, cleaning, or damages you did not cause.',
-      badge: 'Quick Resolution',
-      timeline: '2-6 months'
+      badge: 'Quick Resolution'
     },
     {
       title: 'Debt Collection Issues',
       subtitle: 'Unfair practices • Disputed balances • Harassment • Incorrect charges',
       description: 'When debt collectors use harassment, threats, or unfair practices, or when you face collection attempts for debts you do not owe, statute-barred debts, or balances with incorrect charges, fees, or interest calculations.',
-      badge: 'Consumer Protection',
-      timeline: '4-10 months'
+      badge: 'Consumer Protection'
     },
     {
       title: 'Emerging Claims',
       subtitle: 'SME energy mis‑selling • Credit card fees • Timeshare exits • Financial product mis‑selling',
       description: 'Emerging areas of consumer harm including business energy mis-selling, unfair credit card fees, timeshare exit issues, pension transfer advice problems, and other financial product mis-selling affecting consumers and small businesses.',
-      badge: 'New Opportunities',
-      timeline: 'Varies'
+      badge: 'New Opportunities'
     }
   ]
 
@@ -137,14 +132,7 @@ export default function ClaimsTableSection() {
                       <p className="text-gray-700 text-lg text-body mb-4 leading-relaxed">
                         {claim.description}
                       </p>
-                      
-                      {/* Timeline Indicator */}
-                      {claim.timeline && (
-                        <div className="flex items-center gap-2 text-sm text-gray-500">
-                          <Clock className="w-4 h-4" />
-                          <span className="text-caption">Typical timeline: {claim.timeline}</span>
-                        </div>
-                      )}
+
                     </div>
                     
                     {isHighlighted && (
