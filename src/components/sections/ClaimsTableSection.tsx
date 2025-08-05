@@ -22,9 +22,9 @@ export default function ClaimsTableSection() {
       badge: 'Quick Resolution'
     },
     {
-      title: 'Debt Collection Issues',
-      subtitle: 'Unfair practices • Disputed balances • Harassment • Incorrect charges',
-      description: 'When debt collectors use harassment, threats, or unfair practices, or when you face collection attempts for debts you do not owe, statute-barred debts, or balances with incorrect charges, fees, or interest calculations.',
+      title: 'Debt Contention',
+      subtitle: 'Unenforceable debts • Statute-barred claims • Disputed balances • Invalid agreements',
+      description: 'When you face collection attempts for debts that cannot be legally enforced, including statute-barred debts, agreements lacking proper documentation, debts with missing terms and conditions, or balances with incorrect calculations that make them unenforceable.',
       badge: 'Consumer Protection'
     },
     {
