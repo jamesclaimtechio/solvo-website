@@ -6,35 +6,35 @@ export default function ClaimsTableSection() {
     {
       title: 'Motor Finance Mis‑selling',
       subtitle: 'Discretionary Commission Arrangements (DCA) • Hidden lending charges • Irresponsible lending',
-      description: 'We identify mis-sold finance products and connect you with specialist legal partners who can recover overcharged interest and undisclosed commissions on HP & PCP agreements.',
+      description: 'When car dealerships receive secret commissions from lenders without disclosure, or when finance agreements contain unfair terms, hidden fees, or were sold irresponsibly without proper affordability checks.',
       badge: 'High Volume',
       timeline: '6-12 months'
     },
     {
       title: 'Housing Disrepair',
       subtitle: 'Property defects • Landlord negligence • Health & safety violations',
-      description: 'We connect you with housing law specialists who can secure compensation for unremedied property defects that impact your quality of life. From damp and mold to heating failures—our legal partners ensure landlords meet their obligations.',
+      description: 'When landlords fail to maintain rental properties in habitable condition, including persistent damp, mold, heating failures, electrical issues, structural problems, or other defects that affect health, safety, or quality of life.',
       badge: 'Active Cases',
       timeline: '3-8 months'
     },
     {
       title: 'Tenancy Deposit Protection',
       subtitle: 'Unprotected deposits • Late protection • Unlawful deductions',
-      description: 'We connect you with tenancy law experts who can challenge landlords failing to protect deposits properly or making unfair deductions. Our legal partners can recover your full deposit plus statutory compensation where applicable.',
+      description: 'When landlords fail to protect tenancy deposits in government-approved schemes within required timeframes, or when they make unreasonable deductions for normal wear and tear, cleaning, or damages you did not cause.',
       badge: 'Quick Resolution',
       timeline: '2-6 months'
     },
     {
       title: 'Debt Collection Issues',
       subtitle: 'Unfair practices • Disputed balances • Harassment • Incorrect charges',
-      description: 'We connect you with debt and consumer law specialists who can fight back against aggressive debt collectors and challenge disputed balances. Our legal partners ensure collection practices comply with regulations and protect your rights.',
+      description: 'When debt collectors use harassment, threats, or unfair practices, or when you face collection attempts for debts you do not owe, statute-barred debts, or balances with incorrect charges, fees, or interest calculations.',
       badge: 'Consumer Protection',
       timeline: '4-10 months'
     },
     {
       title: 'Emerging Claims',
       subtitle: 'SME energy mis‑selling • Credit card fees • Timeshare exits • Financial product mis‑selling',
-      description: 'We continuously expand our network of legal partners to address new areas of consumer detriment. Contact us to discuss emerging claims and how our specialist partners can assist with potential compensation opportunities.',
+      description: 'Emerging areas of consumer harm including business energy mis-selling, unfair credit card fees, timeshare exit issues, pension transfer advice problems, and other financial product mis-selling affecting consumers and small businesses.',
       badge: 'New Opportunities',
       timeline: 'Varies'
     }
@@ -60,10 +60,10 @@ export default function ClaimsTableSection() {
             </h2>
             <div className="max-w-4xl mx-auto space-y-6">
               <p className="text-xl text-gray-700 text-subheading">
-                <span className="text-heading gradient-text">Comprehensive coverage</span> across the most impactful areas of consumer justice.
+                <span className="text-heading gradient-text">Understanding your rights</span> across the most common areas of consumer detriment.
               </p>
               <p className="text-lg text-gray-600 text-body">
-                From motor finance recovery to housing compensation—we connect you with trusted legal partners who deliver results through proven expertise and ethical practice.
+                From motor finance overcharging to housing disrepair—learn about the issues that may entitle you to compensation and how we can connect you with specialist legal expertise.
               </p>
             </div>
             
