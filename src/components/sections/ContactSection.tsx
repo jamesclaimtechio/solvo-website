@@ -14,7 +14,7 @@ export default function ContactSection() {
               Want to Know More?
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              If you'd like further information about any of our services—or simply want to understand your rights—feel free to reach out.
+              If you&apos;d like further information about any of our services—or simply want to understand your rights—feel free to reach out.
             </p>
           </div>
           

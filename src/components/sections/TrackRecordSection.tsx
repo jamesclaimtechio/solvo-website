@@ -32,7 +32,7 @@ export default function TrackRecordSection() {
               Track Record<span className="text-primary-600">*</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our results speak for themselves. Here's what we've achieved for consumers seeking justice.
+              Our results speak for themselves. Here&apos;s what we&apos;ve achieved for consumers seeking justice.
             </p>
           </div>
           
