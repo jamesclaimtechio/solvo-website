@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="bg-gradient-to-b from-gray-900 to-black text-white">
       <div className="container section-padding">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-16 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 mb-16">
           {/* Company Info */}
           <div>
             <div className="flex items-center gap-4 mb-8">
@@ -63,99 +63,39 @@ export default function Footer() {
               </div>
             </div>
           </div>
-          
-          {/* Trust & Compliance */}
-          <div>
-            <h4 className="text-xl font-bold text-white mb-8">Trust & Compliance</h4>
-            <div className="grid grid-cols-1 gap-4">
-              {trustBadges.map((badge, index) => {
-                const IconComponent = trustIcons[index] || Shield
-                return (
-                  <div key={index} className="flex items-center gap-4 bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl p-4 border border-gray-700 hover:border-gray-600 transition-colors">
-                    <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
-                      <IconComponent className="w-4 h-4 text-white" />
-                    </div>
-                    <span className="text-gray-200 font-medium">
-                      {badge}
-                    </span>
-                  </div>
-                )
-              })}
-            </div>
-          </div>
         </div>
         
         {/* Regulatory Information */}
         <div className="border-t border-gray-700 pt-12 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Company Registration */}
-            <div>
-              <h5 className="text-lg font-semibold text-white mb-4">Company Information</h5>
-              <div className="space-y-2 text-gray-300">
-                <p><span className="text-gray-400">Company Name:</span> Solvo Solutions Ltd</p>
-                <p><span className="text-gray-400">Company Number:</span> 14760023</p>
+          <div className="text-center max-w-4xl mx-auto">
+            <h5 className="text-lg font-semibold text-white mb-6">Regulatory Information</h5>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300 mb-6">
+              <div>
+                <p className="text-sm text-gray-400">Company Number</p>
+                <p className="font-semibold">14760023</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">FCA Number</p>
+                <p className="font-semibold">1013195</p>
+              </div>
+              <div>
+                <p className="text-sm text-gray-400">Authorized for</p>
+                <p className="font-semibold">Claims Management</p>
               </div>
             </div>
-            
-            {/* FCA Authorization */}
-            <div>
-              <h5 className="text-lg font-semibold text-white mb-4">FCA Authorization</h5>
-              <div className="space-y-2 text-gray-300">
-                <p><span className="text-gray-400">FCA Number:</span> 1013195</p>
-                <p><span className="text-gray-400">Authorized for:</span> Claims Management</p>
-                <p><span className="text-gray-400">Regulated Activities:</span> Claims Management Services</p>
-                <p>
-                  <a 
-                    href="https://register.fca.org.uk/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary-400 hover:text-primary-300 transition-colors underline"
-                  >
-                    Verify on FCA Register →
-                  </a>
-                </p>
-              </div>
-            </div>
-            
-            {/* Registered Address */}
-            <div>
-              <h5 className="text-lg font-semibold text-white mb-4">Registered Office</h5>
-              <div className="text-gray-300">
-                <p className="leading-relaxed">
-                  Suite 3, 2nd Floor, Didsbury House<br/>
-                  748 - 754 Wilmslow Road<br/>
-                  Manchester, England, M20 2DW<br/>
-                  United Kingdom
-                </p>
-                <p className="mt-3">
-                  <a 
-                    href="https://find-and-update.company-information.service.gov.uk/" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="text-primary-400 hover:text-primary-300 transition-colors underline text-sm"
-                  >
-                    Verify on Companies House →
-                  </a>
-                </p>
-              </div>
-            </div>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              Registered Office: Suite 3, 2nd Floor, Didsbury House, 748-754 Wilmslow Road, Manchester, M20 2DW
+            </p>
           </div>
         </div>
         
         {/* Important Notice */}
         <div className="bg-gradient-to-r from-gray-800 to-gray-700 rounded-xl p-6 mb-8 border border-gray-600">
-          <div className="flex items-start gap-4">
-            <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
-              <Shield className="w-4 h-4 text-white" />
-            </div>
-            <div className="text-gray-300">
-              <h6 className="font-semibold text-white mb-2">Regulatory Information</h6>
-              <p className="text-sm leading-relaxed">
-                Solvo Solutions Ltd (Company Number: 14760023) is authorized and regulated by the Financial Conduct Authority (FCA Reference Number: 1013195) 
-                to carry out claims management activities. We connect consumers with specialist legal partners who provide representation and advice. 
-                Our service operates on a success-only fee basis capped at 30% + VAT. Full terms and conditions apply.
-              </p>
-            </div>
+          <div className="text-center text-gray-300">
+            <p className="text-sm leading-relaxed">
+              Solvo Solutions Ltd is authorized and regulated by the Financial Conduct Authority for claims management activities. 
+              We connect consumers with specialist legal partners. Success-only fee basis capped at 30% + VAT.
+            </p>
           </div>
         </div>
 
