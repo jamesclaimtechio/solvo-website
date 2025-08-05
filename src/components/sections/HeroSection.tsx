@@ -2,7 +2,7 @@ import { Scale, Shield } from 'lucide-react'
 
 export default function HeroSection() {
   return (
-    <section className="relative bg-gradient-to-br from-slate-50 via-white to-blue-50/50 section-padding overflow-hidden">
+    <section className="relative bg-gradient-to-br from-primary-50 via-blue-100 via-60% to-slate-100 section-padding overflow-hidden">
       <div className="container">
         <div className="max-w-5xl mx-auto text-center">
           {/* Trust Badge */}
@@ -47,7 +47,7 @@ export default function HeroSection() {
               { value: '£60M+', label: 'Compensation Pursued' },
               { value: '4.5/5', label: 'Client Rating' }
             ].map((stat, index) => (
-              <div key={index} className="text-center p-6 bg-white/80 backdrop-blur-sm rounded-2xl border border-gray-100 shadow-sm hover:shadow-md transition-all duration-300">
+              <div key={index} className="text-center p-6 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-100 shadow-2xl hover:shadow-3xl transition-all duration-300">
                 <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
@@ -60,9 +60,9 @@ export default function HeroSection() {
       
       {/* Modern Background decoration */}
       <div className="absolute inset-0 -z-10 overflow-hidden">
-        <div className="absolute -top-40 -right-32 w-96 h-96 rounded-full bg-gradient-to-br from-primary-100/30 to-blue-100/20 blur-3xl"></div>
-        <div className="absolute -bottom-40 -left-32 w-96 h-96 rounded-full bg-gradient-to-tr from-blue-100/20 to-primary-100/30 blur-3xl"></div>
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-gradient-to-r from-primary-50/40 to-blue-50/40 blur-2xl"></div>
+        <div className="absolute -top-40 -right-32 w-96 h-96 rounded-full bg-gradient-to-br from-primary-200/40 via-blue-200/30 to-blue-100/10 blur-3xl"></div>
+        <div className="absolute -bottom-40 -left-32 w-96 h-96 rounded-full bg-gradient-to-tr from-blue-200/30 via-primary-100/30 to-white/0 blur-3xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-gradient-to-r from-primary-50/60 via-blue-50/40 to-white/0 blur-2xl"></div>
       </div>
     </section>
   )

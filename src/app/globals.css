@@ -31,11 +31,11 @@
   }
   
   .card {
-    @apply bg-white rounded-2xl shadow-sm hover:shadow-lg border border-gray-100 p-8 transition-all duration-300;
+    @apply bg-white rounded-2xl shadow-xl hover:shadow-2xl border border-gray-100 p-8 transition-all duration-300;
   }
   
   .card-elevated {
-    @apply bg-white rounded-2xl shadow-lg hover:shadow-xl border border-gray-100 p-8 transition-all duration-500;
+    @apply bg-white rounded-2xl shadow-2xl hover:shadow-3xl border border-gray-100 p-8 transition-all duration-500;
   }
   
   .badge {
@@ -52,6 +52,10 @@
   
   .gradient-text {
     @apply bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 bg-clip-text text-transparent;
+  }
+  
+  .gradient-divider {
+    @apply w-full h-2 bg-gradient-to-r from-primary-100 via-blue-200 to-primary-100 my-16 rounded-full opacity-80;
   }
   
   .section-header {
