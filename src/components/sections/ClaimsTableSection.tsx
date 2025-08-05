@@ -58,8 +58,8 @@ export default function ClaimsTableSection() {
                   key={index} 
                   className={`card-elevated transition-all duration-300 ${
                     isHighlighted 
-                      ? 'bg-gradient-to-r from-primary-50 via-white to-blue-50 border-primary-200 ring-1 ring-primary-100 shadow-2xl hover:shadow-3xl' 
-                      : 'hover:border-gray-200 shadow-xl hover:shadow-2xl'
+                      ? 'bg-gradient-to-r from-primary-50 via-white to-blue-50 border-primary-200 ring-1 ring-primary-100 shadow-xl hover:shadow-2xl' 
+                      : 'hover:border-gray-200 shadow-lg hover:shadow-xl'
                   }`}
                 >
                   <div className="flex items-start gap-6">

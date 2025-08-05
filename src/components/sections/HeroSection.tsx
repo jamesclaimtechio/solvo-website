@@ -47,7 +47,7 @@ export default function HeroSection() {
               { value: '£60M+', label: 'Compensation Pursued' },
               { value: '4.5/5', label: 'Client Rating' }
             ].map((stat, index) => (
-              <div key={index} className="text-center p-6 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-100 shadow-2xl hover:shadow-3xl transition-all duration-300">
+              <div key={index} className="text-center p-6 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300">
                 <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>

@@ -76,7 +76,7 @@ export default function ConsumerJusticeSection() {
           </div>
           
           {/* Key Promise */}
-          <div className="card-elevated bg-gradient-to-r from-primary-50 via-white to-blue-50 text-center shadow-2xl hover:shadow-3xl">
+          <div className="card-elevated bg-gradient-to-r from-primary-50 via-white to-blue-50 text-center">
             <div className="flex items-center justify-center gap-3 mb-6">
               <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
