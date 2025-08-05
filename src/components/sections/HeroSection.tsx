@@ -1,4 +1,4 @@
-import { ArrowRight, Scale, Shield } from 'lucide-react'
+import { Scale, Shield } from 'lucide-react'
 
 export default function HeroSection() {
   return (
@@ -28,16 +28,12 @@ export default function HeroSection() {
             </p>
           </div>
           
-          {/* CTA Buttons */}
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <button className="btn-primary group">
-              Start Your Claim
-              <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <button className="btn-secondary">
-              <Scale className="w-4 h-4" />
-              Learn Your Rights
-            </button>
+          {/* Information Notice */}
+          <div className="text-center">
+            <div className="inline-flex items-center gap-2 bg-primary-50 rounded-lg px-4 py-2">
+              <Scale className="w-4 h-4 text-primary-600" />
+              <span className="text-primary-800 font-medium">Information & Educational Resource</span>
+            </div>
           </div>
           
           {/* Key Stats Preview */}

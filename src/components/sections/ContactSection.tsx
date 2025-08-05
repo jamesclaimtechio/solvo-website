@@ -92,126 +92,49 @@ export default function ContactSection() {
               </div>
             </div>
             
-            {/* Contact Form */}
+            {/* Information Panel */}
             <div className="card">
               <h3 className="text-2xl font-semibold text-gray-900 mb-6">
-                Free Case Assessment
+                Consumer Rights Information
               </h3>
               
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                  <div>
-                    <label htmlFor="firstName" className="block text-sm font-medium text-gray-700 mb-2">
-                      First Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="firstName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="lastName" className="block text-sm font-medium text-gray-700 mb-2">
-                      Last Name *
-                    </label>
-                    <input
-                      type="text"
-                      id="lastName"
-                      required
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                      placeholder="Smith"
-                    />
-                  </div>
+              <div className="space-y-6">
+                <div>
+                  <h4 className="font-semibold text-gray-900 mb-3">What We Handle</h4>
+                  <ul className="space-y-2 text-gray-600">
+                    <li>• Motor Finance Mis-selling Claims</li>
+                    <li>• Housing Disrepair Compensation</li>
+                    <li>• Tenancy Deposit Disputes</li>
+                    <li>• Debt Collection Issues</li>
+                    <li>• Consumer Justice Cases</li>
+                  </ul>
                 </div>
                 
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                    Email Address *
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    placeholder="john.smith@example.com"
-                  />
+                  <h4 className="font-semibold text-gray-900 mb-3">Our Approach</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    We operate on a success-only fee basis, capped at 30% + VAT. Our process is transparent, 
+                    ethical, and designed to ensure consumers receive fair redress for legitimate claims.
+                  </p>
                 </div>
                 
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-700 mb-2">
-                    Phone Number
-                  </label>
-                  <input
-                    type="tel"
-                    id="phone"
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                    placeholder="+44 7XXX XXXXXX"
-                  />
+                  <h4 className="font-semibold text-gray-900 mb-3">Regulatory Compliance</h4>
+                  <p className="text-gray-600 leading-relaxed">
+                    As an FCA-regulated firm, we adhere to strict guidelines ensuring consumer protection, 
+                    transparent communication, and ethical business practices in all our operations.
+                  </p>
                 </div>
                 
-                <div>
-                  <label htmlFor="claimType" className="block text-sm font-medium text-gray-700 mb-2">
-                    Claim Type *
-                  </label>
-                  <select
-                    id="claimType"
-                    required
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors"
-                  >
-                    <option value="">Select claim type</option>
-                    <option value="motor-finance">Motor Finance Mis-selling</option>
-                    <option value="housing-disrepair">Housing Disrepair</option>
-                    <option value="tenancy-deposit">Tenancy Deposit Disputes</option>
-                    <option value="debt-collection">Debt Contention & Unfair Collection</option>
-                    <option value="other">Other</option>
-                  </select>
+                <div className="bg-primary-50 rounded-lg p-4">
+                  <p className="text-sm text-primary-800 font-medium mb-2">
+                    Educational Resource
+                  </p>
+                  <p className="text-sm text-primary-700">
+                    This website serves as an informational resource about consumer rights and claims management processes.
+                  </p>
                 </div>
-                
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                    Tell us about your situation
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={4}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary-500 focus:border-primary-500 transition-colors resize-none"
-                    placeholder="Please provide details about your case..."
-                  ></textarea>
-                </div>
-                
-                <div className="space-y-4">
-                  <label className="flex items-start gap-3">
-                    <input
-                      type="checkbox"
-                      required
-                      className="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
-                    />
-                    <span className="text-sm text-gray-600">
-                      I consent to Solvo Solutions processing my personal data for the purpose of assessing my potential claim. *
-                    </span>
-                  </label>
-                  
-                  <label className="flex items-start gap-3">
-                    <input
-                      type="checkbox"
-                      className="mt-1 w-4 h-4 text-primary-600 border-gray-300 rounded focus:ring-primary-500"
-                    />
-                    <span className="text-sm text-gray-600">
-                      I would like to receive updates about my case and relevant legal news.
-                    </span>
-                  </label>
-                </div>
-                
-                <button type="submit" className="btn-primary w-full justify-center">
-                  Get Free Assessment
-                </button>
-                
-                <p className="text-xs text-gray-500 text-center">
-                  By submitting this form, you agree to our Privacy Policy and Terms of Service.
-                </p>
-              </form>
+              </div>
             </div>
           </div>
         </div>

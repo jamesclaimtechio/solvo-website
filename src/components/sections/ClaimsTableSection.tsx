@@ -104,16 +104,13 @@ export default function ClaimsTableSection() {
             })}
           </div>
           
-          {/* Call to Action */}
+          {/* Information Notice */}
           <div className="text-center mt-12">
             <div className="inline-flex items-center gap-4 bg-white rounded-lg p-6 shadow-sm border border-gray-200">
-              <div className="text-left">
-                <p className="text-gray-900 font-medium mb-1">Think you have a claim?</p>
-                <p className="text-gray-600 text-sm">Get a free assessment of your case</p>
+              <div className="text-center">
+                <p className="text-gray-900 font-medium mb-1">Consumer Rights Information</p>
+                <p className="text-gray-600 text-sm">Understanding your options in claims management</p>
               </div>
-              <button className="btn-primary flex-shrink-0">
-                Check Eligibility
-              </button>
             </div>
           </div>
         </div>
