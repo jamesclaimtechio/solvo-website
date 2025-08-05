@@ -100,7 +100,7 @@ export default function ContactSection() {
               
               <div className="space-y-6">
                 <div>
-                  <h4 className="font-semibold text-gray-900 mb-3">What We Handle</h4>
+                  <h4 className="font-semibold text-gray-900 mb-3">Areas We Cover</h4>
                   <ul className="space-y-2 text-gray-600">
                     <li>• Motor Finance Mis-selling Claims</li>
                     <li>• Housing Disrepair Compensation</li>
@@ -113,8 +113,8 @@ export default function ContactSection() {
                 <div>
                   <h4 className="font-semibold text-gray-900 mb-3">Our Approach</h4>
                   <p className="text-gray-600 leading-relaxed">
-                    We operate on a success-only fee basis, capped at 30% + VAT. Our process is transparent, 
-                    ethical, and designed to ensure consumers receive fair redress for legitimate claims.
+                    We connect consumers with trusted legal partners who operate on a success-only fee basis. Our service is capped at 30% + VAT. Our process is transparent, 
+                    ethical, and designed to ensure consumers are connected with the right legal expertise for legitimate claims.
                   </p>
                 </div>
                 

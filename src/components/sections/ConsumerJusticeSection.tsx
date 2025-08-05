@@ -16,15 +16,15 @@ export default function ConsumerJusticeSection() {
     },
     {
       icon: MessageSquare,
-      title: 'Advocate',
-      subtitle: 'for clients',
-      description: 'via negotiation, formal complaint, or litigation through trusted solicitors.'
+      title: 'Connect',
+      subtitle: 'with specialists',
+      description: 'via trusted legal partners who handle negotiation, formal complaints, and litigation.'
     },
     {
       icon: RotateCcw,
-      title: 'Restore',
-      subtitle: 'what\'s owed',
-      description: 'compensation, interest, and peace of mind.'
+      title: 'Facilitate',
+      subtitle: 'fair outcomes',
+      description: 'working with legal partners to secure compensation, interest, and peace of mind.'
     }
   ]
 
@@ -46,7 +46,7 @@ export default function ConsumerJusticeSection() {
                 Every day we help people put right a wide range of wrongs—unfair fees, irresponsible lending, unsafe homes, withheld deposits, and more.
               </p>
               <p className="text-xl text-gray-800 text-subheading">
-                Our mission is simple: <span className="text-heading gradient-text">identify injustice, secure evidence, and deliver redress—so ordinary consumers get the fair outcome the system promises.</span>
+                Our mission is simple: <span className="text-heading gradient-text">identify injustice, secure evidence, and connect consumers with trusted legal partners who deliver redress—so ordinary consumers get the fair outcome the system promises.</span>
               </p>
             </div>
           </div>
@@ -88,8 +88,8 @@ export default function ConsumerJusticeSection() {
               <span className="text-2xl text-heading gradient-text">Our Promise</span>
             </div>
             <p className="text-xl text-gray-700 max-w-3xl mx-auto text-body">
-              We keep clients informed at every stage and charge a{' '}
-              <span className="text-subheading bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">success‑only fee that is capped at 30% + VAT.</span>
+              We keep clients informed at every stage and our trusted legal partners work on a{' '}
+              <span className="text-subheading bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">success‑only fee basis, with our service capped at 30% + VAT.</span>
             </p>
           </div>
         </div>

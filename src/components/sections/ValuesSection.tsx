@@ -55,7 +55,7 @@ export default function ValuesSection() {
               Our Values
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Five core principles that guide every decision we make and every case we handle.
+              Five core principles that guide every decision we make and every consumer we help connect with legal expertise.
             </p>
           </div>
           

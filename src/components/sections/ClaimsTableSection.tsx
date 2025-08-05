@@ -6,35 +6,35 @@ export default function ClaimsTableSection() {
     {
       title: 'Motor Finance Mis‑selling',
       subtitle: 'Discretionary Commission Arrangements (DCA) • Hidden lending charges • Irresponsible lending',
-      description: 'Recover overcharged interest and undisclosed commissions on HP & PCP agreements. We help identify mis-sold finance products and secure fair compensation for affected consumers.',
+      description: 'We identify mis-sold finance products and connect you with specialist legal partners who can recover overcharged interest and undisclosed commissions on HP & PCP agreements.',
       badge: 'High Volume',
       timeline: '6-12 months'
     },
     {
       title: 'Housing Disrepair',
       subtitle: 'Property defects • Landlord negligence • Health & safety violations',
-      description: 'Secure compensation for unremedied property defects that impact your quality of life. From damp and mold to heating failures—we ensure landlords meet their obligations.',
+      description: 'We connect you with housing law specialists who can secure compensation for unremedied property defects that impact your quality of life. From damp and mold to heating failures—our legal partners ensure landlords meet their obligations.',
       badge: 'Active Cases',
       timeline: '3-8 months'
     },
     {
       title: 'Tenancy Deposit Protection',
       subtitle: 'Unprotected deposits • Late protection • Unlawful deductions',
-      description: 'Challenge landlords who fail to protect deposits properly or make unfair deductions. Recover your full deposit plus statutory compensation where applicable.',
+      description: 'We connect you with tenancy law experts who can challenge landlords failing to protect deposits properly or making unfair deductions. Our legal partners can recover your full deposit plus statutory compensation where applicable.',
       badge: 'Quick Resolution',
       timeline: '2-6 months'
     },
     {
       title: 'Debt Collection Issues',
       subtitle: 'Unfair practices • Disputed balances • Harassment • Incorrect charges',
-      description: 'Fight back against aggressive debt collectors and challenge disputed balances. We ensure collection practices comply with regulations and protect your rights.',
+      description: 'We connect you with debt and consumer law specialists who can fight back against aggressive debt collectors and challenge disputed balances. Our legal partners ensure collection practices comply with regulations and protect your rights.',
       badge: 'Consumer Protection',
       timeline: '4-10 months'
     },
     {
       title: 'Emerging Claims',
       subtitle: 'SME energy mis‑selling • Credit card fees • Timeshare exits • Financial product mis‑selling',
-      description: 'We continuously expand our expertise to address new areas of consumer detriment. Contact us to discuss emerging claims and potential compensation opportunities.',
+      description: 'We continuously expand our network of legal partners to address new areas of consumer detriment. Contact us to discuss emerging claims and how our specialist partners can assist with potential compensation opportunities.',
       badge: 'New Opportunities',
       timeline: 'Varies'
     }
@@ -63,7 +63,7 @@ export default function ClaimsTableSection() {
                 <span className="text-heading gradient-text">Comprehensive coverage</span> across the most impactful areas of consumer justice.
               </p>
               <p className="text-lg text-gray-600 text-body">
-                From motor finance recovery to housing compensation—we deliver results through proven expertise and ethical practice.
+                From motor finance recovery to housing compensation—we connect you with trusted legal partners who deliver results through proven expertise and ethical practice.
               </p>
             </div>
             
@@ -194,7 +194,7 @@ export default function ClaimsTableSection() {
               </div>
               
               <p className="text-gray-600 text-body mt-6 border-t border-gray-200 pt-6">
-                Understanding your rights in claims management and consumer protection—with complete transparency on costs and outcomes.
+                Understanding your rights in claims management and consumer protection—we connect you with trusted legal partners with complete transparency on costs and outcomes.
               </p>
             </div>
           </div>

@@ -25,7 +25,7 @@ export default function HeroSection() {
           <div className="max-w-4xl mx-auto mb-12">
             <p className="text-xl sm:text-2xl text-gray-600 text-body mb-6">
               Solvo Solutions is an FCA‑regulated claims‑management firm devoted to advancing{' '}
-              <span className="font-semibold text-gray-800">consumer justice</span>—from mis‑sold motor finance to unsafe housing—through ethical, transparent, and tech‑driven processes.
+              <span className="font-semibold text-gray-800">consumer justice</span>—connecting consumers with specialist legal partners for everything from mis‑sold motor finance to unsafe housing—through ethical, transparent, and tech‑driven processes.
             </p>
             <p className="text-lg text-gray-600 text-body">
               Clear information about consumer justice and fair outcomes.
