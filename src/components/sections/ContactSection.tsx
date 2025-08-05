@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Shield, Database, Cloud, FileCheck } from 'lucide-react'
+import { Mail, MapPin, Shield, Database, Cloud, FileCheck } from 'lucide-react'
 import { contactInfo, trustBadges } from '@/lib/utils'
 
 export default function ContactSection() {
@@ -38,21 +38,6 @@ export default function ContactSection() {
                         className="text-primary-600 hover:text-primary-700 transition-colors"
                       >
                         {contactInfo.email}
-                      </a>
-                    </div>
-                  </div>
-                  
-                  <div className="flex items-start gap-4">
-                    <div className="flex-shrink-0 w-12 h-12 bg-primary-50 rounded-lg flex items-center justify-center">
-                      <Phone className="w-6 h-6 text-primary-600" />
-                    </div>
-                    <div>
-                      <p className="font-medium text-gray-900 mb-1">Phone</p>
-                      <a 
-                        href={`tel:${contactInfo.phone.replace(/\s/g, '')}`}
-                        className="text-primary-600 hover:text-primary-700 transition-colors"
-                      >
-                        {contactInfo.phone}
                       </a>
                     </div>
                   </div>
