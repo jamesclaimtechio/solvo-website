@@ -3,9 +3,8 @@ export function cn(...classes: (string | undefined | null | boolean)[]): string 
 }
 
 export const contactInfo = {
-  email: 'info@solvosolutions.co.uk',
-  phone: '+44 (0)20 xxxx xxxx',
-  address: 'Solvo Solutions Ltd, 75 Bulkeley Road, Cheadle, Cheshire, SK8 2AD'
+  email: 'support@solvosolutions.co.uk',
+  address: 'Suite 3, 2nd Floor, Didsbury House, 748-754 Wilmslow Road, Manchester, M20 2DW'
 }
 
 export const trustBadges = [

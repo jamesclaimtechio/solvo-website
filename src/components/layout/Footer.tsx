@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Shield, Database, Cloud, FileCheck } from 'lucide-react'
+import { Mail, MapPin, Shield, Database, Cloud, FileCheck } from 'lucide-react'
 import { contactInfo, trustBadges } from '@/lib/utils'
 
 export default function Footer() {
@@ -39,15 +39,6 @@ export default function Footer() {
                 </div>
                 <div>
                   <p className="text-gray-300 text-lg">{contactInfo.email}</p>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="w-10 h-10 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl flex items-center justify-center">
-                  <Phone className="w-5 h-5 text-white" />
-                </div>
-                <div>
-                  <p className="text-gray-300 text-lg">{contactInfo.phone}</p>
                 </div>
               </div>
               
@@ -101,20 +92,13 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="border-t border-gray-700 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6">
-            <div className="text-center md:text-left">
-              <p className="text-gray-400 text-lg mb-2">
-                © 2025 Solvo Solutions Ltd. All rights reserved.
-              </p>
-              <p className="text-gray-500 text-sm">
-                Company Number: 14760023 | FCA Number: 1013195
-              </p>
-            </div>
-            <div className="flex items-center gap-8 text-gray-400">
-              <a href="#" className="hover:text-primary-400 transition-colors font-medium">Privacy Policy</a>
-              <a href="#" className="hover:text-primary-400 transition-colors font-medium">Terms of Service</a>
-              <a href="#" className="hover:text-primary-400 transition-colors font-medium">Cookie Policy</a>
-            </div>
+          <div className="text-center">
+            <p className="text-gray-400 text-lg mb-2">
+              © 2025 Solvo Solutions Ltd. All rights reserved.
+            </p>
+            <p className="text-gray-500 text-sm">
+              Company Number: 14760023 | FCA Number: 1013195
+            </p>
           </div>
         </div>
       </div>
