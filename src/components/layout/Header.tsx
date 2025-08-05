@@ -11,17 +11,17 @@ export default function Header() {
               <Scale className="w-7 h-7 text-white" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
+              <h1 className="text-2xl text-heading bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent">
                 Solvo Solutions
               </h1>
-              <p className="text-sm text-gray-500 font-medium">Claims Management</p>
+              <p className="text-sm text-gray-500 text-caption">Claims Management</p>
             </div>
           </div>
           
           {/* FCA Badge */}
           <div className="flex items-center gap-2 bg-gradient-to-r from-primary-50 to-blue-50 rounded-full px-4 py-2 border border-primary-100 shadow-sm">
             <Shield className="w-4 h-4 text-primary-600" />
-            <span className="text-sm font-semibold text-primary-700">FCA Regulated</span>
+            <span className="text-sm text-caption text-primary-700">FCA Regulated</span>
           </div>
         </div>
       </div>

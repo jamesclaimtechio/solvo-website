@@ -10,12 +10,12 @@ export default function HeroSection() {
             <div className="w-8 h-8 bg-gradient-to-br from-primary-500 to-primary-600 rounded-lg flex items-center justify-center">
               <Shield className="w-4 h-4 text-white" />
             </div>
-            <span className="text-sm font-semibold text-gray-700">FCA Regulated Claims Management</span>
+            <span className="text-sm font-semibold text-gray-700 tracking-wide">FCA Regulated Claims Management</span>
           </div>
           
           {/* Main Headline */}
-          <h1 className="section-header mb-8">
-            Fair redress,{' '}
+          <h1 className="text-5xl sm:text-6xl lg:text-7xl text-display mb-8">
+            <span className="gradient-text">Fair redress,</span>{' '}
             <span className="bg-gradient-to-r from-primary-600 via-blue-600 to-primary-700 bg-clip-text text-transparent">
               done right.
             </span>
@@ -23,11 +23,11 @@ export default function HeroSection() {
           
           {/* Sub-headline */}
           <div className="max-w-4xl mx-auto mb-12">
-            <p className="text-xl sm:text-2xl text-gray-600 leading-relaxed mb-6 font-light">
+            <p className="text-xl sm:text-2xl text-gray-600 text-body mb-6">
               Solvo Solutions is an FCA‑regulated claims‑management firm devoted to advancing{' '}
               <span className="font-semibold text-gray-800">consumer justice</span>—from mis‑sold motor finance to unsafe housing—through ethical, transparent, and tech‑driven processes.
             </p>
-            <p className="text-lg text-gray-500 italic font-light">
+            <p className="text-lg text-gray-500 italic text-body">
               (No hard sales pitch—just an overview of who we are and what we stand for.)
             </p>
           </div>
@@ -36,7 +36,7 @@ export default function HeroSection() {
           <div className="text-center mb-16">
             <div className="inline-flex items-center gap-3 bg-gradient-to-r from-primary-50 to-blue-50 rounded-2xl px-6 py-4 border border-primary-100 shadow-sm">
               <Scale className="w-5 h-5 text-primary-600" />
-              <span className="text-primary-800 font-semibold">Information & Educational Resource</span>
+              <span className="text-primary-800 text-caption">Information & Educational Resource</span>
             </div>
           </div>
           
@@ -48,10 +48,10 @@ export default function HeroSection() {
               { value: '4.5/5', label: 'Client Rating' }
             ].map((stat, index) => (
               <div key={index} className="text-center p-6 bg-white/90 backdrop-blur-md rounded-2xl border border-gray-100 shadow-xl hover:shadow-2xl transition-all duration-300">
-                <div className="text-3xl sm:text-4xl font-bold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">
+                <div className="text-3xl sm:text-4xl text-display bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent mb-2">
                   {stat.value}
                 </div>
-                <div className="text-sm text-gray-600 font-medium">{stat.label}</div>
+                <div className="text-sm text-gray-600 text-caption">{stat.label}</div>
               </div>
             ))}
           </div>

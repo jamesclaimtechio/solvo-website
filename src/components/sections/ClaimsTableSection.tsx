@@ -40,7 +40,7 @@ export default function ClaimsTableSection() {
             <h2 className="section-subheader mb-8">
               Claims We Handle
             </h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed font-light">
+            <p className="text-xl text-gray-600 max-w-4xl mx-auto text-body">
               From motor finance mis-selling to housing disputes, we cover a comprehensive range of consumer justice issues.
             </p>
           </div>
@@ -73,16 +73,16 @@ export default function ClaimsTableSection() {
                     
                     <div className="flex-1 min-w-0">
                       <div className="mb-4">
-                        <h3 className="text-xl font-bold gradient-text mb-2">
+                        <h3 className="text-xl text-heading gradient-text mb-2">
                           {claim.title}
                         </h3>
                         {claim.subtitle && (
-                          <p className="text-sm text-gray-600 font-medium leading-relaxed">
+                          <p className="text-sm text-gray-600 text-caption">
                             {claim.subtitle}
                           </p>
                         )}
                       </div>
-                      <p className="text-gray-700 leading-relaxed text-lg">
+                      <p className="text-gray-700 text-lg text-body">
                         {claim.description}
                       </p>
                     </div>
@@ -111,8 +111,8 @@ export default function ClaimsTableSection() {
           {/* Information Notice */}
           <div className="text-center mt-16">
             <div className="card-elevated bg-gradient-to-r from-blue-50 via-white to-primary-50 text-center max-w-2xl mx-auto">
-              <h3 className="text-xl font-bold gradient-text mb-3">Consumer Rights Information</h3>
-              <p className="text-gray-600 leading-relaxed">Understanding your options in claims management processes and consumer protection</p>
+              <h3 className="text-xl text-heading gradient-text mb-3">Consumer Rights Information</h3>
+              <p className="text-gray-600 text-body">Understanding your options in claims management processes and consumer protection</p>
             </div>
           </div>
         </div>

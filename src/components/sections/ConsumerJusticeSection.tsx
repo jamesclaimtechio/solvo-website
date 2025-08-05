@@ -38,11 +38,11 @@ export default function ConsumerJusticeSection() {
               Championing Consumer Justice
             </h2>
             <div className="max-w-4xl mx-auto space-y-6">
-              <p className="text-xl text-gray-600 leading-relaxed font-light">
+              <p className="text-xl text-gray-600 text-body">
                 Every day we help people put right a wide range of wrongs—unfair fees, irresponsible lending, unsafe homes, withheld deposits, and more.
               </p>
-              <p className="text-xl text-gray-800 font-medium leading-relaxed">
-                Our mission is simple: <span className="font-semibold gradient-text">identify injustice, secure evidence, and deliver redress—so ordinary consumers get the fair outcome the system promises.</span>
+              <p className="text-xl text-gray-800 text-subheading">
+                Our mission is simple: <span className="text-heading gradient-text">identify injustice, secure evidence, and deliver redress—so ordinary consumers get the fair outcome the system promises.</span>
               </p>
             </div>
           </div>
@@ -63,11 +63,11 @@ export default function ConsumerJusticeSection() {
                       {index + 1}
                     </div>
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900 mb-3 leading-tight">
-                    <span className="font-bold gradient-text">{process.title}</span>{' '}
-                    <span className="font-light text-gray-700">{process.subtitle}</span>
+                  <h3 className="text-xl text-subheading text-gray-900 mb-3">
+                    <span className="text-heading gradient-text">{process.title}</span>{' '}
+                    <span className="text-body text-gray-700">{process.subtitle}</span>
                   </h3>
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 text-body">
                     {process.description}
                   </p>
                 </div>
@@ -81,11 +81,11 @@ export default function ConsumerJusticeSection() {
               <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center">
                 <CheckCircle className="w-6 h-6 text-white" />
               </div>
-              <span className="text-2xl font-bold gradient-text">Our Promise</span>
+              <span className="text-2xl text-heading gradient-text">Our Promise</span>
             </div>
-            <p className="text-xl text-gray-700 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl text-gray-700 max-w-3xl mx-auto text-body">
               We keep clients informed at every stage and charge a{' '}
-              <span className="font-semibold bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">success‑only fee that is capped at 30% + VAT.</span>
+              <span className="text-subheading bg-gradient-to-r from-primary-600 to-blue-600 bg-clip-text text-transparent">success‑only fee that is capped at 30% + VAT.</span>
             </p>
           </div>
         </div>

@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -6,10 +7,18 @@
 @layer base {
   html {
     scroll-behavior: smooth;
+    font-feature-settings: 'rlig' 1, 'calt' 1;
   }
   
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-feature-settings: 'rlig' 1, 'calt' 1, 'ss01' 1;
   }
 }
 
@@ -59,10 +68,34 @@
   }
   
   .section-header {
-    @apply text-4xl sm:text-5xl lg:text-6xl font-bold gradient-text leading-tight;
+    @apply text-4xl sm:text-5xl lg:text-6xl font-black gradient-text leading-[0.95] tracking-[-0.02em];
   }
   
   .section-subheader {
-    @apply text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text;
+    @apply text-2xl sm:text-3xl lg:text-4xl font-bold gradient-text leading-[1.1] tracking-[-0.01em];
+  }
+  
+  .text-display {
+    @apply font-black tracking-[-0.025em] leading-[0.9];
+  }
+  
+  .text-heading {
+    @apply font-bold tracking-[-0.01em] leading-[1.2];
+  }
+  
+  .text-subheading {
+    @apply font-semibold tracking-[-0.005em] leading-[1.3];
+  }
+  
+  .text-body {
+    @apply font-normal leading-[1.6] tracking-[0.005em];
+  }
+  
+  .text-caption {
+    @apply font-medium leading-[1.4] tracking-[0.01em];
+  }
+  
+  .text-mono {
+    @apply font-mono tracking-[0.02em];
   }
 }
