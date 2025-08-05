@@ -1,0 +1,163 @@
+# Solvo Solutions Website - Cursor Rules
+
+## 🎯 Project Overview
+We're building a **simple, professional 1-page website** for **Solvo Solutions** - an FCA-regulated claims-management firm specializing in consumer justice and redress.
+
+### Tech Stack
+- **Next.js 14** (App Router)
+- **React 18** 
+- **TypeScript** (for better developer experience)
+- **Tailwind CSS** (for styling)
+- **No backend processing** - static/client-side only
+
+---
+
+## 📁 Project Structure
+```
+solvo-website/
+├── public/
+│   ├── images/           # Company logos, hero images, team photos
+│   ├── icons/            # Favicons, social media icons
+│   └── documents/        # PDFs, case studies, etc.
+├── src/
+│   ├── app/
+│   │   ├── globals.css   # Global styles & Tailwind imports
+│   │   ├── layout.tsx    # Root layout with metadata
+│   │   └── page.tsx      # Main landing page
+│   ├── components/
+│   │   ├── ui/           # Reusable UI components (Button, Card, etc.)
+│   │   ├── sections/     # Page sections (Hero, About, Services, Contact)
+│   │   └── layout/       # Header, Footer, Navigation
+│   ├── lib/
+│   │   └── utils.ts      # Utility functions, constants
+│   └── types/
+│       └── index.ts      # TypeScript type definitions
+```
+
+---
+
+## 🎨 Design & Content Strategy
+
+### Page Sections (Single Page Layout):
+1. **Hero Section** - "Fair redress, done right" + value proposition
+2. **Championing Consumer Justice** - Mission, process, and approach
+3. **Claims We Handle** - Service offerings table (Motor Finance, Housing Disrepair, etc.)
+4. **Who We Are** - Team expertise and background
+5. **Our Values** - 5 core principles (Consumer-First, Compliance, etc.)
+6. **Track Record** - Key metrics and social proof
+7. **Contact Section** - Contact form, details, and trust badges
+
+### Design Principles:
+- **Professional & trustworthy** aesthetic (financial services industry)
+- **Mobile-first responsive** design
+- **Fast loading** with optimized images
+- **Accessible** (WCAG 2.1 AA compliance)
+- **SEO optimized** for claims management keywords
+- **Regulatory compliant** visual design (FCA, Consumer Duty)
+- **Trust-building elements** - badges, certifications, testimonials
+
+---
+
+## 🛠️ Development Guidelines
+
+### Code Quality
+- Use **TypeScript** for all components and utilities
+- Follow **Next.js 14 App Router** patterns
+- Implement **Tailwind CSS** with custom design system
+- Write **semantic HTML** for accessibility
+- Add **proper meta tags** for SEO (claims management focus)
+- **Regulatory compliance** - FCA, GDPR, Consumer Duty considerations
+- **Security best practices** - secure forms, data protection
+
+### Component Structure
+- Create **reusable UI components** in `/components/ui/` (Button, Card, Badge, etc.)
+- Build **section components** for each page area:
+  - `HeroSection` - Hero banner with headline/subheadline
+  - `ConsumerJusticeSection` - Mission and process explanation
+  - `ClaimsTableSection` - Services table with claim types
+  - `TeamSection` - Leadership team and expertise
+  - `ValuesSection` - 5 core values with icons
+  - `TrackRecordSection` - Metrics and social proof
+  - `ContactSection` - Contact form and trust badges
+- Use **proper TypeScript interfaces** for props
+- Implement **responsive design** patterns
+- **Trust elements** - regulatory badges, certifications
+
+### Performance
+- Optimize images with **Next.js Image component**
+- Use **proper font loading** strategies
+- Implement **lazy loading** where appropriate
+- Keep bundle size minimal
+
+### Accessibility
+- Include proper **ARIA labels** and roles
+- Ensure **keyboard navigation** works
+- Maintain **color contrast** ratios
+- Add **alt text** for all images
+
+---
+
+## 📧 Contact Form Strategy
+Since no backend processing:
+- Use **Formspree** or **Netlify Forms** for form handling
+- Implement **client-side validation** with proper error messaging
+- Add **loading states** and **success/error** messaging
+- Include **reCAPTCHA** for spam protection
+- **GDPR compliant** - consent checkboxes, privacy policy links
+- **Lead qualification** fields - claim type, approximate value
+- **Professional tone** - suitable for financial services industry
+
+---
+
+## 🚀 Deployment & Hosting
+- **Vercel** (recommended for Next.js)
+- **Netlify** (alternative with form handling)
+- Configure **custom domain** for Solvo Solutions
+- Set up **Google Analytics** or similar for tracking
+
+---
+
+## 📱 Responsive Breakpoints
+```css
+/* Tailwind breakpoints to follow */
+sm: 640px   /* Mobile landscape */
+md: 768px   /* Tablet */
+lg: 1024px  /* Desktop */
+xl: 1280px  /* Large desktop */
+```
+
+---
+
+## 🎯 Success Metrics
+- **Core Web Vitals** scores > 90
+- **Lighthouse** performance > 95
+- **Mobile-friendly** test passing
+- **SEO** optimization complete
+- **Contact form** functional and tested
+
+---
+
+## 🔧 Development Commands
+```bash
+npm run dev          # Start development server
+npm run build        # Build for production
+npm run start        # Start production server
+npm run lint         # Run ESLint
+npm run type-check   # Run TypeScript checks
+```
+
+---
+
+## 📝 Content Requirements
+- [ ] Company logo and branding assets
+- [ ] Hero section copy and imagery
+- [ ] Service descriptions
+- [ ] Company background/about content
+- [ ] Team member info and photos
+- [ ] Contact information
+- [ ] Social media links
+- [ ] Case studies or portfolio items (optional)
+
+---
+
+*Built with ❤️ using Next.js and Tailwind CSS*
