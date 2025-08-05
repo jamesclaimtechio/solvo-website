@@ -1,0 +1,13 @@
+# Ignore Next.js server files
+.next/
+next-env.d.ts
+
+# Ignore source files (we only want the built output)
+src/
+*.ts
+*.tsx
+tsconfig.json
+next.config.js
+
+# Keep only the static export
+!out/
