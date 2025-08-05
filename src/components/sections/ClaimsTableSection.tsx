@@ -63,20 +63,22 @@ export default function ClaimsTableSection() {
             </div>
             
             {/* Quick Stats */}
-            <div className="flex items-center justify-center gap-8 mt-12">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-8 mt-12">
               <div className="text-center">
-                <div className="text-2xl text-display gradient-text">5+</div>
-                <div className="text-sm text-gray-600 text-caption">Claim Types</div>
+                <div className="text-xl sm:text-2xl text-display gradient-text">5+</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-caption">Claim Types</div>
               </div>
-              <div className="w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+              <div className="hidden sm:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+              <div className="w-full sm:w-auto block sm:hidden h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-2" />
               <div className="text-center">
-                <div className="text-2xl text-display gradient-text">UK Wide</div>
-                <div className="text-sm text-gray-600 text-caption">Coverage</div>
+                <div className="text-xl sm:text-2xl text-display gradient-text">UK Wide</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-caption">Coverage</div>
               </div>
-              <div className="w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+              <div className="hidden sm:block w-px h-12 bg-gradient-to-b from-transparent via-gray-300 to-transparent" />
+              <div className="w-full sm:w-auto block sm:hidden h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent my-2" />
               <div className="text-center">
-                <div className="text-2xl text-display gradient-text">Success Fee</div>
-                <div className="text-sm text-gray-600 text-caption">Only Model</div>
+                <div className="text-xl sm:text-2xl text-display gradient-text">Success Fee</div>
+                <div className="text-xs sm:text-sm text-gray-600 text-caption">Only Model</div>
               </div>
             </div>
           </div>
@@ -98,30 +100,30 @@ export default function ClaimsTableSection() {
                       : 'hover:border-gray-200 shadow-lg hover:shadow-xl'
                   }`}
                 >
-                  <div className="flex items-start gap-6">
-                    <div className={`flex-shrink-0 w-16 h-16 rounded-2xl flex items-center justify-center shadow-lg ${
+                  <div className="flex items-start gap-3 sm:gap-6">
+                    <div className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-xl sm:rounded-2xl flex items-center justify-center shadow-lg ${
                       isHighlighted 
                         ? 'bg-gradient-to-br from-primary-500 to-primary-600' 
                         : 'bg-gradient-to-br from-gray-400 to-gray-500'
                     }`}>
-                      <IconComponent className="w-8 h-8 text-white" />
+                      <IconComponent className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
                     </div>
                     
                     <div className="flex-1 min-w-0">
                       {/* Header with Badge */}
-                      <div className="flex items-start justify-between mb-4">
-                        <div className="flex-1">
-                          <h3 className="text-xl text-heading gradient-text mb-2">
+                      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-3 sm:mb-4">
+                        <div className="flex-1 mb-2 sm:mb-0">
+                          <h3 className="text-lg sm:text-xl text-heading gradient-text mb-1 sm:mb-2">
                             {claim.title}
                           </h3>
                           {claim.subtitle && (
-                            <p className="text-sm text-gray-600 text-caption leading-relaxed">
+                            <p className="text-xs sm:text-sm text-gray-600 text-caption leading-relaxed">
                               {claim.subtitle}
                             </p>
                           )}
                         </div>
                         {claim.badge && (
-                          <span className={`badge ml-4 flex-shrink-0 ${
+                          <span className={`badge self-start sm:ml-4 flex-shrink-0 text-xs sm:text-sm ${
                             isHighlighted ? 'badge-primary' : 'badge-gray'
                           }`}>
                             {claim.badge}
@@ -129,26 +131,43 @@ export default function ClaimsTableSection() {
                         )}
                       </div>
                       
-                      <p className="text-gray-700 text-lg text-body mb-4 leading-relaxed">
+                      <p className="text-gray-700 text-base sm:text-lg text-body mb-3 sm:mb-4 leading-relaxed">
                         {claim.description}
                       </p>
 
                     </div>
                     
                     {isHighlighted && (
-                      <div className="flex-shrink-0">
-                        <div className="w-12 h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
-                          <Award className="w-6 h-6 text-white" />
+                      <div className="flex-shrink-0 hidden sm:block">
+                        <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center shadow-lg">
+                          <Award className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                         </div>
                       </div>
                     )}
                     
                     {index === 4 && (
-                      <div className="flex-shrink-0">
-                        <span className="badge badge-gray">
+                      <div className="flex-shrink-0 hidden sm:block">
+                        <span className="badge badge-gray text-xs sm:text-sm">
                           Coming Soon
                         </span>
                       </div>
+                    )}
+                  </div>
+                  
+                  {/* Mobile-only badges row */}
+                  <div className="flex sm:hidden items-center justify-between mt-3 pt-3 border-t border-gray-100">
+                    {isHighlighted && (
+                      <div className="flex items-center gap-2">
+                        <div className="w-6 h-6 bg-gradient-to-br from-green-500 to-green-600 rounded-lg flex items-center justify-center">
+                          <Award className="w-3 h-3 text-white" />
+                        </div>
+                        <span className="text-xs text-green-700 font-medium">Priority Service</span>
+                      </div>
+                    )}
+                    {index === 4 && (
+                      <span className="badge badge-gray text-xs">
+                        Coming Soon
+                      </span>
                     )}
                   </div>
                 </div>
@@ -157,31 +176,31 @@ export default function ClaimsTableSection() {
           </div>
           
           {/* Enhanced Information Notice */}
-          <div className="text-center mt-20">
+          <div className="text-center mt-16 sm:mt-20">
             <div className="card-elevated bg-gradient-to-r from-blue-50 via-white to-primary-50 text-center max-w-4xl mx-auto">
-              <div className="flex items-center justify-center gap-3 mb-6">
-                <div className="w-12 h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-2xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 mb-6">
+                <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-br from-primary-500 to-primary-600 rounded-xl sm:rounded-2xl flex items-center justify-center">
+                  <Award className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
                 </div>
-                <h3 className="text-2xl text-heading gradient-text">Success-Only Fee Structure</h3>
+                <h3 className="text-xl sm:text-2xl text-heading gradient-text">Success-Only Fee Structure</h3>
               </div>
               
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
-                <div>
-                  <div className="text-3xl font-black text-primary-600 mb-2">No</div>
-                  <div className="text-sm text-gray-600 text-body">Upfront Costs</div>
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-6 text-center">
+                <div className="py-2">
+                  <div className="text-2xl sm:text-3xl font-black text-primary-600 mb-1 sm:mb-2">No</div>
+                  <div className="text-xs sm:text-sm text-gray-600 text-body">Upfront Costs</div>
                 </div>
-                <div>
-                  <div className="text-3xl font-black text-blue-600 mb-2">30%</div>
-                  <div className="text-sm text-gray-600 text-body">Max Fee + VAT</div>
+                <div className="py-2 border-t sm:border-t-0 sm:border-l sm:border-r border-gray-200 sm:px-4">
+                  <div className="text-2xl sm:text-3xl font-black text-blue-600 mb-1 sm:mb-2">30%</div>
+                  <div className="text-xs sm:text-sm text-gray-600 text-body">Max Fee + VAT</div>
                 </div>
-                <div>
-                  <div className="text-3xl font-black text-green-600 mb-2">100%</div>
-                  <div className="text-sm text-gray-600 text-body">Transparent Process</div>
+                <div className="py-2 border-t sm:border-t-0 border-gray-200">
+                  <div className="text-2xl sm:text-3xl font-black text-green-600 mb-1 sm:mb-2">100%</div>
+                  <div className="text-xs sm:text-sm text-gray-600 text-body">Transparent Process</div>
                 </div>
               </div>
               
-              <p className="text-gray-600 text-body mt-6 border-t border-gray-200 pt-6">
+              <p className="text-sm sm:text-base text-gray-600 text-body mt-4 sm:mt-6 border-t border-gray-200 pt-4 sm:pt-6">
                 Understanding your rights in claims management and consumer protection—we connect you with trusted legal partners with complete transparency on costs and outcomes.
               </p>
             </div>
