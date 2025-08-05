@@ -21,7 +21,7 @@ export default function Header() {
           {/* FCA Badge */}
           <div className="flex items-center gap-2 bg-gradient-to-r from-primary-50 to-blue-50 rounded-full px-4 py-2 border border-primary-100 shadow-sm">
             <Shield className="w-4 h-4 text-primary-600" />
-            <span className="text-sm text-caption text-primary-700">FCA Regulated</span>
+            <span className="text-sm text-caption text-primary-700">Industry Leaders</span>
           </div>
         </div>
       </div>
